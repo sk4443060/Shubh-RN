@@ -85,3 +85,80 @@
 
     - Scan the QR using your expo app
     - You have successfully launched your first mobile app.
+# -----------------------------------------------
+# Class 02: Intro of the file and folder structure
+    -app       : We store only the app screens like Home, About Us etc
+    -assets    : We stores fonts, images and general html etc... (Which is static)
+    -components: Piece of codes and its functionality etc
+    -constant  : We stores the constant values in this file
+
+                    eg,
+                    const tintColorLight = '#0a7ea4';
+                    const tintColorDark = '#fff';
+
+                    export const Colors = {
+                        light: {
+                            text: '#11181c',
+                            background: '#fff',
+                            tint: tintColorLight,
+                            icon: '#687076',
+                            tabIconDefault: '#687076',
+                            tabIconSelected: tintColorLight, 
+                        }
+                    }
+
+                    export const Fonts = Platform.select({
+                        ios: {
+                            /** iOS `UIFontDescriptorSystemDesignDefault` */
+                            sans: 'system-ui',
+                            /** iOS `UIFontDescriptorSystemDesignSerif` */
+                            serif: 'ui-serif',
+                            /** iOS `UIFontDescriptorSystemDesignRounded` */
+                            rounded: 'ui-rounded',
+                            /** iOS `UIFontDescriptorSystemDesignMonospaced` */
+                            mono: 'ui-monospace',
+                        },
+                        default: {
+                            sans: 'normal',
+                            serif: 'serif',
+                            rounded: 'normal',
+                            mono: 'monospace',
+                        },
+                        web: {
+                            sans: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+                            serif: "Georgia, 'Times New Roman', serif",
+                            rounded: "'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif",
+                            mono: "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
+                        },
+                    });
+
+    - Rest of the files you know very well
+
+    > CLEAN THE DEFAULT FILES AND FOLDERS AT INITIAL (REMOVE ALL THESE)
+        - expo
+        - app
+        - assets
+        - components
+        - constants
+        - hooks
+        - scripts
+
+    - Create src folder inside root directory
+    - Create app inside src
+    - Inside src create Index.tsx
+    - Write your code as:
+
+        import { View, Text } from 'react-native'
+        import React from 'react'
+
+        const Index = () => {
+            return (
+                <View>
+                    <Text>Index</Text>
+                </View>
+            )
+        }
+
+        export default Index
+
+        OR, Type: rnfe and hit enter. This will give the same code as above
