@@ -162,3 +162,26 @@
         export default Index
 
         OR, Type: rnfe and hit enter. This will give the same code as above
+
+# Class 03: Components Guide
+    Definition: Components are independent & reusable bits of code. They serve the same purpose as JS functions, but work in isolation and return HTML.
+
+    - Skeleton/Syntex to write the component as:
+
+        const ComponentName = () => {
+            return <Text>Component</Text>;
+        };
+
+        OR,
+
+        function Index() {
+            return <Text>Component</Text>;
+        }
+
+        > NOTE: Do not forgot to import
+
+            import { Text } from "react-native";  <- Add this at top most
+            export default Index;                 <- Add at the last of the component
+
+# class03practice:
+    - Create and practice the components 
