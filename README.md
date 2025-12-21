@@ -1,6 +1,6 @@
 <!-- REACT NATIVE GUIDE --># Shubh-RN
 # OFFICIAL DOCS AND THEIR PURPOSE:
-  01. React Native: https://reactnative.dev
+    01. React Native: https://reactnative.dev
                     https://reactnative.dev/docs/environment-setup
                     https://reactnative.dev/docs/set-up-your-environment
                             <!-- #Chocolatey -->
@@ -19,7 +19,7 @@
                             - Now click the "Download button"
                             #NOTE: Configure Android Studio as:
                             ----------------------------------------------
-                            - After installation run the Android Studion
+                            - After installation run the Android Studio
                             - Click on: More Actions
                             - Click on SDK Manager
                             - Select Android 11.0("R") under SDK Platform Tab
@@ -52,9 +52,36 @@
                             - Enter Variable Value: C\Users\<Your User or system Name>\AppData\Local\Android\Sdk
                             - Click: OK, OK...
        
+    02. Creating first project by follow this link:
+        Link:
 
+            https://reactnative.dev/docs/environment-setup
 
+        OR Directly use the command:
 
+            npx create-expo-app@latest
 
+        OR Move forward by clicking on the "Continue with Expo"
+        After this you will be landed on the "Expo Official Documentation"
+        You can also navigate directly by visiting this url:
 
-  02. 
+            https://docs.expo.dev/get-started/set-up-your-environment/
+
+        And click on "Expo logo", It will navigate you to at "https://expo.dev"
+        Next click on button: Read the Docs
+
+# CLASSES AND ITS CORE CONTENT
+# -----------------------------------------------
+# Class 01:
+    - Creating project using:
+
+        npx create-expo-app@latest
+
+    - Running Project
+
+        npm start
+
+    > NOTE: Your system and Mobile must connected with the same network and also installed expo in your mobile device.
+
+    - Scan the QR using your expo app
+    - You have successfully launched your first mobile app.
