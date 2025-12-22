@@ -184,4 +184,14 @@
             export default Index;                 <- Add at the last of the component
 
 # class03practice:
-    - Create and practice the components 
+    - Create and practice the components
+
+# Class 04: JSX Guide
+    - Definition: JSX allows us to write HTML in React Native. JSX makes it easier to write & add HTML in React.
+
+    We learn many types of buttons and related stuff like:
+
+    1. onPress: Function that is called when the component is pressed. Required.
+    2. onPressIn: Function that is called when the press gesture starts.
+    3. onPressOut: Function that is called when the press gesture ends (or is cancelled).
+    4. onLongPress: Function that is called when a long press is detected.
