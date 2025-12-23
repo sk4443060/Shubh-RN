@@ -195,3 +195,29 @@
     2. onPressIn: Function that is called when the press gesture starts.
     3. onPressOut: Function that is called when the press gesture ends (or is cancelled).
     4. onLongPress: Function that is called when a long press is detected.
+
+    NOTE: Profile cards make without style
+
+# Class 05: Expressions in JSX Guide
+    - Definition: With JSX you can write expressions inside curly braces. The expressions can be a variable, or property, or any other valid JavaScript expression. JSX will execute the expression and return the result.
+
+    NOTE: Car component created in this lecture
+
+    Example:
+
+    const DynamicContent = () {
+        const username = "Shubh";
+        const multiply (a: number, b: number) a+b;
+        return (
+            <View>
+                <Text>My name is {username}</Text>
+                <Text>2+2= 2+ 2}</Text>
+                <Text>
+                    My Friends List: {["Shubham", "Suraj", "Sanjeev", "Swati"]}
+                </Text>
+                <Text>2*2 = {multiply(2, 2)}</Text>
+            </View>
+        );
+    };
+
+# Class 06: You learn about Styling
