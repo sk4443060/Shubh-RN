@@ -4,7 +4,7 @@ import CarComponent from '@/components/CarComponent'
 
 const Cars = () => {
   return (
-    <View>
+    <View style={{padding: 20}}>
       <CarComponent />
     </View>
   )

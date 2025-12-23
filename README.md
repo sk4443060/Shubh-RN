@@ -221,3 +221,69 @@
     };
 
 # Class 06: You learn about Styling
+    Inline CSS Syntex:
+
+        <View style={{ backgroundColor: 'red', }}
+
+        NOTE: background-colo: 'red'❌
+              backgroundColor: 'Red'✔️
+
+    Internal CSS
+
+        import { StyleSheet } from "react-native";
+        :
+        :
+        :
+
+        const styles = StyleSheet.create({
+            textStyle: {
+                color: 'red',
+                fontSize: 30
+            },
+            paraStyle: {
+                color: 'gray',
+                lineHeight: 2,
+            }
+        });
+
+        Now head over to the element and use like the example:
+
+        <Text style={styles.textStyle}>Internal CSS done</Text>
+        <Text style={styles.paraStyle}>Internal CSS done</Text>
+
+    External CSS
+
+        - Create a file inside root directory with name "utils"
+        - Create style.ts inside utils
+        - Add import { StyleSheet } from "react-native";
+        - Now write the same way as
+
+            const styles = StyleSheet.create({
+                textStyle: {
+                    color: 'red',
+                    fontSize: 30
+                },
+                paraStyle: {
+                    color: 'gray',
+                    lineHeight: 2,
+                }
+            });
+
+        - Now
+            export default styles
+
+        - Now, Head over to the file where you want to use this style and add the line at the top of the file as:
+
+            import style from "../utils/style"
+                               --------------
+                               👆 Actual style file path
+
+        - Final step to implement this:
+
+            <Text style={style.textStyle}>Internal CSS done</Text>
+            <Text style={style.paraStyle}>Internal CSS done</Text>
+
+        😀 You have successfully implemented the style
+
+    Do the practice and implement the css in all the previous Classes
+

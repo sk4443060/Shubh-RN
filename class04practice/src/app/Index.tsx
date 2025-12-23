@@ -1,19 +1,35 @@
-import { View, Text } from 'react-native'
-import React from 'react'
-import ProfileImage from '@/components/ProfileImage'
-import ProfileName from '@/components/ProfileName'
-import ProfileDesc from '@/components/ProfileDesc'
-import ProfileBtn from '@/components/ProfileBtn'
+import { View } from "react-native";
+import React from "react";
+import ProfileImage from "@/components/ProfileImage";
+import ProfileName from "@/components/ProfileName";
+import ProfileDesc from "@/components/ProfileDesc";
+import ProfileBtn from "@/components/ProfileBtn";
 
 const Index = () => {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', padding: 20, backgroundColor: '#f5f5f5', borderRadius: 10, width: '90%', height: 250, alignSelf: 'center' }}>
+    <View
+        style={{
+          padding: 15,
+        }}>
+      <View
+        style={{
+          padding: 25,
+          backgroundColor: "#ffffffff",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: 15,
+          borderRadius: 10,
+          boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
+        }}
+      >
         <ProfileImage />
         <ProfileName />
         <ProfileDesc />
         <ProfileBtn />
+      </View>
     </View>
-  )
-}
+  );
+};
 
-export default Index
+export default Index;
