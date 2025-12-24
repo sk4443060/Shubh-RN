@@ -287,3 +287,15 @@
 
     Do the practice and implement the css in all the previous Classes
 
+# Class 07: Flatlist
+    Outside Return Block:
+    const fruits = ["apple", "banana", "orange" ]
+
+    Sytex
+
+        <FlatList data={fruits} renderItem={(element) console.log(element)} />
+
+        > NOTE: Observe your console
+
+        Now you can
+        <FlatList data={fruits} keyExtractor={ (item) => item } renderItem={(element) console.log(element)} />
